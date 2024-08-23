@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color: #402531;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: -2;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it's behind other content */
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6e6e6;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 120px;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0 0;
+}
+
+/* Bento Boxes Section */
+.bento-boxes {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: transparent; /* Transparent background */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    border-top: none; /* Remove the top border */
+}
+
+.bento-box {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent; /* Transparent background */
+    box-shadow: none;
+    max-width: 300px; /* Optional: control the maximum width of each box */
+}
+
+.bento-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bento-text {
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: transparent; /* Ensure the text background is transparent */
+}
